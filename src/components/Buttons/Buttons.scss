@@ -1,0 +1,28 @@
+$main-color: #f4e041;
+$hover-color: #ffe302;
+$disabled-color: #B4B4B4;
+
+.btn {
+ display: flex;
+  justify-content: center;
+    align-items: center;
+    background: $main-color;
+    border-radius: 80px;
+    width: 100px;
+    height: 34px;
+    user-select: none;   
+    background-color: $disabled-color;
+
+    &[href='#showmore'] {
+        width: 120px;
+    }
+
+         &:hover {
+             background: $hover-color;
+         }
+
+    &.disabled {
+        background: $main-color;
+    }
+}
+

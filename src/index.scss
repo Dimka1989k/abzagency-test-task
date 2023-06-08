@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+@import 'components/mixins';
+
+
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+
+
+.container {
+  margin: 0 auto;
+  width: 1170px;
+  min-height: 100vh;
+
+  @include superdesktop {
+    width: 1024px;
+  }
+
+  @include desktop {
+    width: 768px;
+  }
+
+  @include tablet {
+    max-width: 100%;
+  }
+}
+
+
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  font-size: 100%;
+  line-height: 1;
+}
+
+
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  line-height: 26px;
+}
+

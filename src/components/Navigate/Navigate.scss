@@ -1,0 +1,90 @@
+@import '../mixins';
+$base-color: #f4e041;
+$hover-color: #ffe302;
+
+.navigate {
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    
+
+
+
+
+    &-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:  1170px;
+        padding: 13px 0;
+        
+
+        @include superdesktop {
+            width: 1024px;
+            padding-left: 60px;
+            padding-right: 60px;
+           
+        }
+
+        @include desktop {
+            width: 768px;
+            padding-left: 32px;
+            padding-right: 32px;
+            
+        }
+
+                @include tablet {
+                   
+                    padding-left: 16px;
+                    padding-right: 16px;
+        
+                }
+
+       
+    }
+
+    &-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+       
+            
+            
+
+       
+    }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 80px;
+            width: 100px;
+            height: 34px;
+            user-select: none;
+            border: none;
+            margin: 0 auto;
+            background: #f4e041;
+            color: rgba(0, 0, 0, 0.87);
+
+
+            &:hover {
+                    background: $hover-color;
+                }
+            
+        }
+
+
+               
+
+
+
+}
+
+        

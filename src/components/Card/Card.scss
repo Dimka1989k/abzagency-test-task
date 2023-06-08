@@ -1,0 +1,78 @@
+@import '../mixins';
+
+.card {
+    height: 254px;
+    width: 370px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+
+
+    @include superdesktop {
+            width: 282px;
+        }
+    
+        @include desktop {
+            width: 344px;
+        }
+    
+        @include tablet {
+            width: 328px;
+        }
+
+    
+
+    
+   
+
+    &__image {
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__name {
+        margin: 20px 0;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__inform {
+        text-align: center;
+        max-width: 100%;
+        position: relative;
+
+        .prompt__email {
+            position: absolute;
+            color: #fff;
+            max-width: 300px;
+            overflow: hidden;
+            word-wrap: break-word;
+            z-index: 5;
+            top: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.87);
+            border-radius: 4px;
+            padding: 3px 16px;
+        }
+
+        &-email,
+        &-position {
+            max-width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        &__email {
+            cursor: pointer;
+        }
+    }
+}

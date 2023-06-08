@@ -1,0 +1,92 @@
+@import '../mixins';
+$disabled-color: #B4B4B4;
+$base-color: #f4e041;
+$hover-color: #ffe302;
+
+.section-post {
+    padding: 70px 0 100px;
+    position: relative;
+    min-height: 50vh;
+
+    @include superdesktop {
+        padding: 70px 60px 100px;
+    }
+
+    @include desktop {
+        padding: 70px 32px 100px;
+    }
+
+    @include tablet {
+        padding: 70px 16px 100px;
+    }
+
+    .title {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .form {
+        width: 380px;
+        margin: 0 auto;
+       
+      
+
+        @include tablet {
+            width: 328px;
+        }
+
+        .error {
+            text-align: center;
+            color:rgba(0, 0, 0, 0.87);
+        }
+
+        .positions {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .radio-button:not(:first-of-type) {
+                margin-top: 7px;
+            }
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;                
+            border-radius: 80px;
+            width: 100px;
+            height: 34px;
+            user-select: none;
+            border: none;
+            margin: 0 auto;
+            background: #f4e041;
+            color: rgba(0, 0, 0, 0.87);
+
+            &:hover {
+                    background: $hover-color;
+                }
+            
+            
+               
+
+
+                &.disabled {                    
+                    color: rgba(255, 255, 255, 0.87);                    
+                    background: $disabled-color;
+
+
+                   
+                       
+               
+                    }
+
+                                       
+        }
+
+
+       
+    }
+}
